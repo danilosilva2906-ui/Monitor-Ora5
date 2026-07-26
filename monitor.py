@@ -47,6 +47,8 @@ def check_cars():
 
     except Exception as e:
         print(f"Erro ao fazer o scraping da página: {e}")
-
-if __name__ == "__main__":
+        
+        if __name__ == "__main__":
+    send_telegram_message("🤖 *Teste:* O bot de monitoramento está ativo e conseguindo enviar mensagens para o seu celular!")
     check_cars()
+
